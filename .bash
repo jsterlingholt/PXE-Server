@@ -1,1 +1,1 @@
-alias core-os -v=echo 'hello'
+alias "update-core-os"="/srv/tftp/core-os/./updater.sh"
