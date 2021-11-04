@@ -9,8 +9,7 @@ version=`grep -o '"release": "[^"]*' $stream.json | grep -o -m 1 '[^"]*$'`
 base_url=https://builds.coreos.fedoraproject.org/prod/streams/$stream/builds
 
 echo 'Preparing to download PXE files'
-mkdir arm64
-mkdir amd64
+mkdir arm64 amd64
 
 echo 'Downloading ARM64 PXE files'
 for filename in kernel-aarch64 initramfs.aarch64.img rootfs.aarch64.img; do
