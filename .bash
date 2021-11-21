@@ -1,1 +1,0 @@
-alias "update-core-os"="/srv/tftp/core-os/./updater.sh"
